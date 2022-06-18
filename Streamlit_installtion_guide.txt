@@ -1,0 +1,58 @@
+*Icevision support only Linux and MacOS
+
+[Requirement Obj detection]
+Python : 3.7.13 or 3.8.10
+icevision[all]==0.12.0
+torch==1.10.0+cu102
+torchvision==0.11.1+cu102 
+mmcv-full==1.3.17
+mmdet==2.17.0
+opencv-python==4.2.0.32
+opencv-python-headless==4.5.4.60
+setuptools==59.5.0
+streamlit==1.10.0
+
+
+[Requirement Img Classification]
+easyocr==1.5.0
+pythainlp==3.0.8
+numpy
+Pillow
+editdistance
+
+[Error Fix]
+-ImportError: libSM.so.6: cannot open shared object file: No such file or directory (sudo apt-get install -y libsm6 libxext6 libxrender-dev)
+-AttributeError: module 'distutils' has no attribute 'version' (pip3 install setuptools==59.5.0)
+
+[AWS Installation]
+sudo apt-get update && apt-get upgrade
+sudo apt-get install ufw
+sudo ufw default allow outgoing
+sudo ufw default deny incoming
+sudo ufw allow 22
+sudo ufw allow 80
+sudo ufw enable
+sudo ufw status
+sudo apt-get install python3-pip
+sudo apt-get install python3-venv
+sudo python3 -m venv venv
+source ./venv/bin/activate
+sudo chown -R 777 'venv'
+sudo chmod -R 777 'venv'
+pip3 install streamlit
+pip3 install -r requirements.txt
+sudo python3 -m streamlit run app.py --server.port 80
+
+[Installation]
+
+1. sudo python3 -m pip install [package]
+
+[Streamlit]
+sudo python3 -m streamlit run full.py --server.port 80
+
+
+[Screen mode รันค้าง]
+screen -S runserver
+Ctrl + A + D (ออกจาก terminal โดยรันค้างไว้)
+screen -ls เช็คว่าอะไรรันอยู่บ้างตอนที่เป็น screen
+screen -r [name] access screen name mode
