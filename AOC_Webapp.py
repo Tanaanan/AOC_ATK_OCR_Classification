@@ -11,7 +11,7 @@ import editdistance
 
 
 st.sidebar.image("./logo.png")
-st.sidebar.header("ATK-OCR Classification (AOC) Webapp.")
+st.sidebar.header("ATK-OCR classification (AOC) Webapp.")
 def load_image(image_file):
     img = Image.open(image_file)
     return img
@@ -415,7 +415,7 @@ if choice =='About' :
     st.header("About...")
 
     st.subheader("AOC คืออะไร ?")
-    st.write("- เป็นระบบที่สามารถคัดกรองผลตรวจเชื้อของ Covid 19 ได้ผ่าน ที่ตรวจ ATK (Antigen Test Kit) ควบคู่กับบัตรประชาชน จากรูปภาพได้โดยอัตโนมัติ")
+    st.write("- เป็นระบบที่สามารถคัดกรองผลตรวจเชื้อของ COVID-19 ได้ผ่าน ที่ตรวจ ATK (Antigen Test Kit) ควบคู่กับบัตรประชาชน จากรูปภาพได้โดยอัตโนมัติ")
 
     st.subheader("AOC ทำอะไรได้บ้าง ?")
     st.write("- ตรวจจับผลตรวจ ATK (Obj detection)")
@@ -432,9 +432,9 @@ if choice =='About' :
     st.subheader("คำแนะนำในการใช้งาน")
     st.write("- ในการใช้งานให้ถ่ายรูปภาพบัตรประชาชนในแนวตั้งเท่านั้น เนื่องจากถ้าเป็นแนวอื่นอาจทำให้การตรวจจับคลาดเคลื่อนเอาได้")#3
     st.write("- ภาพไม่ควรมีแสงที่สว่างมากเกืนไป และ มืดเกินไป มิฉะนั้นอาจทำให้การตรวจจับคลาดเคลื่อนเอาได้")#4
-    st.write("- ภาพไม่ควรที่อยู่ไกลเกินไป และ ควรมีความชัด มิฉะนั้นอาจทำให้การตรวจจับคลาดเคลื่อน หรือ ไม่สามารถตรวจจับได้")#5
+    st.write("- ภาพไม่ควรที่จะอยู่ไกลเกินไป และ ควรมีความชัด มิฉะนั้นอาจทำให้การตรวจจับคลาดเคลื่อน หรือ ไม่สามารถตรวจจับได้")#5
 
-    st.subheader("ลายละเอียดเพิ่มเติม")
+    st.subheader("รายละเอียดเพิ่มเติม")
     st.write('[Medium blog](https://medium.com/@mjsalyjoh/atk-ocr-classification-aoc-%E0%B8%A3%E0%B8%B0%E0%B8%9A%E0%B8%9A%E0%B8%84%E0%B8%B1%E0%B8%94%E0%B8%81%E0%B8%A3%E0%B8%AD%E0%B8%87%E0%B8%9C%E0%B8%A5%E0%B8%95%E0%B8%A3%E0%B8%A7%E0%B8%88-atk-%E0%B9%81%E0%B8%A5%E0%B8%B0-%E0%B8%9A%E0%B8%B1%E0%B8%95%E0%B8%A3%E0%B8%9B%E0%B8%A3%E0%B8%B0%E0%B8%8A%E0%B8%B2%E0%B8%8A%E0%B8%99-fa32a8d47599)')
     st.write('[Github Link](https://github.com/Tanaanan/AOC_ATK_OCR_Classification)')
 
@@ -442,7 +442,7 @@ if choice =='About' :
      
        
 elif choice == "Detection":
-    st.header(" Antigen test kit + Identification Card detector.")
+    st.header(" Antigen test kit + Identification card detector.")
     pages_name = ['ATK + Idcard Detect', 'ATK Detect', 'Idcard Detect']
     page = st.radio('Select option mode :', pages_name)
 
