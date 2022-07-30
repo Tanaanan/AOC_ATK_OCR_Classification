@@ -2,7 +2,7 @@
 --> Antigen test kit (Object detection) + Identification Card (Img Classification) model 
 
 - Deploy link (EC2) : http://18.142.181.149/
-- Medium blog : shorturl.at/apGX5
+- Medium blog (Thai Article) : shorturl.at/apGX5
 
 How to run on localhost (Streamlit).
 
