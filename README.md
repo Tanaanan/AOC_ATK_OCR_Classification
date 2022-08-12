@@ -6,6 +6,7 @@
 - Presentation Slide (Thai Article) : shorturl.at/BJQW8
 
 ** Supported on Python 3.7 to 3.8 (This Webapp have been tested on Python 3.7.13, 3.8.10)
+
 ** Supported only on Linux and MacOS (Windows use WSL to executed instead.)
 
 How to run on localhost (Streamlit).
