@@ -1,10 +1,15 @@
-# AOC_ATK_OCR_Classification
---> Antigen test kit (Object detection) + Identification Card (Natural Language Processing) model 
+# AOC_ATK_OCR_Classification (AOC)
+Antigen test kit (Object detection) + Identification Card (Natural Language Processing) model 
 
-- Deploy link (EC2) : http://18.142.181.149/ (debug deploy error! in progress =w= : Object Detection Version)
-- Deploy link (Huggingface) : https://huggingface.co/spaces/Tanaanan/ATK_OCR_Classification_FastAI (Image Classification Version)
+
+
 - Medium blog (Thai Article) : shorturl.at/apGX5
 - Presentation Slide (Thai Article) : shorturl.at/BJQW8
+
+- Deploy link (Huggingface) : https://huggingface.co/spaces/Tanaanan/ATK_OCR_Classification_Icevision (Object Detection Version)
+- Deploy link (Huggingface) : https://huggingface.co/spaces/Tanaanan/ATK_OCR_Classification_FastAI (Image Classification Version)
+- Deploy link (Huggingface) : https://huggingface.co/spaces/Tanaanan/Thai-Identification-Card_OCR_Webapp (Only IDcard OCR Version)
+
 
 ** Supported on Python 3.7 to 3.8 (This Webapp have been tested on Python 3.7.13, 3.8.10)
 
