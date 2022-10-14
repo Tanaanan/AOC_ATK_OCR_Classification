@@ -1,6 +1,12 @@
 # AOC_ATK_OCR_Classification (AOC)
 Antigen test kit (Object detection) + Identification Card (Natural Language Processing) model 
 
+AOC model is used for screening and collecting COVID-19 data by image more easier and faster using Artificial Intelligence and Natural Language Processing.
+
+Feature
+1. Antigen Test Kit deteection (Positive / Negative)
+2. Identification Card recognition (Name-Lastname , Identification number)
+
 
 
 - Medium blog (Thai Article) : shorturl.at/apGX5
