@@ -82,22 +82,20 @@ def get_detection(img_path):
 
 
     
-    #st.write(new_im.size)
-
-  
-
-  try:
-    labels, acc = pred_dict['detection']['labels'][0], pred_dict['detection']['scores'][0]
-    acc = acc * 100
-    if labels == "Neg":
-      labels = "Negative"
-    elif labels == "Pos":
-      labels = "Positive"
-    st.success(f"Result : {labels} with {round(acc, 2)}% confidence.")
-  except IndexError:
-    st.error("Not found ATK image! ; try to take image again..")
-    labels = "None"
-    acc = 0
+    if (len(pred_dict['detection']['labels'])) > 0:
+      num_count = 1
+      for i,j in zip(pred_dict['detection']['labels'], pred_dict['detection']['scores']):
+        labels = i
+        acc = round((j*100),2)
+        if labels == "Neg":
+          labels = "Negative"
+          st.success(f"{num_count}. '{labels}' with {acc} % confidence.")
+        elif labels == "Pos":
+          labels = "Positive"
+          st.error(f"{num_count}. '{labels}' with {acc} % confidence.")
+        num_count += 1
+    else: # when not found imgs
+      st.warning("Not found 'Antigen Test Kit' image ; please recheck and try again !!")
 
 def get_img_detection(img_path):
    
